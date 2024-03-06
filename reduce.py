@@ -26,7 +26,7 @@ assert(calculate_factorial(5)==120)
 def concatenate_strings(list_strings):
     '''
     inp: List of strings
-    output concatenated string
+    output: concatenated string
     '''
 
     try:
