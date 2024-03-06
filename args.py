@@ -22,12 +22,12 @@ except AssertionError:
 
 # [*args] Write a Python function concat_strings that takes any number of strings as arguments and returns a single concatenated string.
 
-def concatenate_strings(*val):
+def concat_strings(*val):
     try:
         return ''.join(val)
     except Exception as e:
         return f"Exception: {e}"
 
-assert(concatenate_strings("Hi","Hello","How are you")=="HiHelloHow are you")
-assert(concatenate_strings("I","Love","You")=="ILoveYou")
+assert(concat_strings("Hi","Hello","How are you")=="HiHelloHow are you")
+assert(concat_strings("I","Love","You")=="ILoveYou")
 
