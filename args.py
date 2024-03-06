@@ -2,10 +2,15 @@
 # Test your function with various input cases.
 
 def sum_of_all(*val):
+    '''
+    Val should contains numeric values
+
+    returns: Sum of all items
+    '''
     try:
         return sum(val)
     except Exception as e:
-        print("Exception: ",e)
+        return f"Exception: {e}"
 
 try:
     assert(sum_of_all(3,5,6,8)==22)
@@ -21,7 +26,7 @@ def concatenate_strings(*val):
     try:
         return ''.join(val)
     except Exception as e:
-        print("Exception: ",e)
+        return f"Exception: {e}"
 
 assert(concatenate_strings("Hi","Hello","How are you")=="HiHelloHow are you")
 assert(concatenate_strings("I","Love","You")=="ILoveYou")
